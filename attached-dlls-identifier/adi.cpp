@@ -185,10 +185,12 @@ int main(int argc, char* argv[]) {
 
         ListProcesses();
 
-        DWORD pid; 
-        std::cout << "[?] Type the remote pid : " << std::endl; // Type a number and press enter
-        std::cin >> pid; 
-	    ListRemoteModules(pid);
+        while (true){
+            DWORD pid; 
+            std::cout << "[?] Type the remote pid (press Ctrl+C to exit) : "; // Type a number and press enter
+            std::cin >> pid; 
+            ListRemoteModules(pid);
+        }
     }
     else {
         std::cout << "[-] Unknown mode" << std::endl;
