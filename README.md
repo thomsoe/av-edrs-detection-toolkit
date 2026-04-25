@@ -13,14 +13,14 @@ List attached DLLs to the program :
 ```
 adi.exe self
 ```
-![](./images/self.png)
+![](./attached-dlls-identifier/images/self.png)
 
 
 List every processes with PID and list attached DLLs to remote program :
 ```
 adi.exe remote
 ```
-![](./images/remote.png)
+![](./attached-dlls-identifier/images/remote.png)
 
 
 Launch the program as Administrator to see SYSTEM's programs.
