@@ -17,5 +17,7 @@ int main() {
         std::cout << "[+] System uptime verification passed.\n";
     }
 
+    getchar();
+    
     return 0;
 }
